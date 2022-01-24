@@ -1,0 +1,26 @@
+.Cover-div {
+    background: url(../../assets/photos/hearts.svg), #EBDBFF;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.cover-middle {
+    display: flex;
+    justify-content: space-between;
+    max-width: 67.5%;
+    margin: 0 auto;
+    padding: 20px 0 25px;
+}
+
+.Cover-info {
+width: 50%;
+padding: 40px 93px 35px;
+}
+
+.Cover-info h2 {
+    color: #6811F5;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 16px;
+    margin-bottom: 33px;
+
+}

@@ -1,0 +1,34 @@
+header {
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    background-color: #fff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 67.5%;
+    margin: 0 auto;
+}
+
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    padding: 32px 0px;
+}
+
+.logo-div .logo-img {
+   margin-right: 16px;
+   height: 56px;
+   width: 66px;
+   object-fit: cover;
+   
+}
+.ContactButton {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(219, 53, 121, 0.08);
+    width: 196px;
+    height: 56px;
+    border-radius: 100px;
+}
+
+.Primary {
+    background-color: #DB3579;
+    cursor: pointer;
+}
+
+
+
+.button p, a {
+    font-size: 14px;
+    font-weight: bold;
+    color:#DB3579;
+}
+.Primary p {
+    color: #fff;
+}
+.iconDiv {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
