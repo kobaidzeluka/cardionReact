@@ -3,7 +3,9 @@ import Cover from '../components/Cover/Cover';
 import './Container.css';
 import Service from '../components/Service/Service';
 import doctor from '../assets/photos/diana.png'
-import {Balloon as ReactComponent } from '../assets/photos/baloon.svg';
+import {  ReactComponent as Balloon } from '../assets/photos/baloon.svg';
+import ResearchImg from '../assets/photos/research-info.png';
+import Button from '../components/Button';
 function Container() {
 
     
@@ -39,33 +41,39 @@ function Container() {
             <div className='container-middle'>
                 <div className='service-profile'>
                     <Service item={cardio} />
-                    <div className='profile'>
-                        <div className='profile-header'>
-                            <div className='profile-img'>
-                                <img alt='doctor' src={doctor} />
+                    <div className='profileContainer'>
+                        <div className='profile'>
+                            <div className='profile-header'>
+                                <div className='profile-img'>
+                                    <img alt='doctor' src={doctor} />
+                                </div>
+                                <div className='profile-desc'>
+                                    <p>დიანა მინდიაშვილი</p>
+                                    <span>ექიმი კარდიოლოგი</span>
+                                </div>
                             </div>
-                            <div className='profile-desc'>
-                                <p>დიანა მინდიაშვილი</p>
-                                <span>ექიმი კარდიოლოგი</span>
+                            <div className='biography'>
+                            {
+                                biographyDesc.map((item, index) => {
+                                    return (
+                                        
+                                        <div className='desc-line'>
+                                            <div className='balloon'><Balloon/></div>
+                                            <p>{item} </p> 
+                                        </div>
+                                        
+                                    )
+                                })
+                            }
+                            <Button  title='ბიოგრაფია სრულად' />
                             </div>
-                        </div>
-                        <div className='biography'>
-                        {
-                    biographyDesc.map((item, index) => {
-                        return (
-                            
-                            <div className='desc-line'>
-                                
-                                {item}  
-                            </div>
-                            
-                        )
-                    })
-                }
                         </div>
                     </div>
                 </div>
-
+                <div className='research'>
+                    <div className='researchImgDiv'><img alt='research-img' src={ResearchImg} /></div>
+                    <div className='researchService'><Service item={echo} /></div>
+                </div>
              </div>
         </section>
     )

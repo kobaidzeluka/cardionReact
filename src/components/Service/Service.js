@@ -13,9 +13,9 @@ function Service({ item }) {
                 {
                     item.map((item, index) => {
                         return (
-                            <div className='description-line'>
+                            <div className= {item.title ? 'description-line' : 'description-singleline'} >
                                 <span>{index  + 1}</span>
-                                <div>
+                                <div className={item.title ? 'something' : null}>
                                     {
                                         item.title
                                         ? (

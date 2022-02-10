@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     padding: 88px 0;
-    max-width: 67.5%;
+    width: 66.5%;
     margin: 0 auto;
 }
 
@@ -22,9 +22,15 @@ width: 50%;
 
 }
 
-.profile {
+.profileContainer {
     width: 50%;
-    margin-right: 93px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile {
+    max-width: 504px;
+    margin-right: 40px;
 }
 
 .profile-header {
@@ -42,6 +48,7 @@ width: 50%;
     max-width: 227px;
     word-wrap: break-word;
     margin-left: 24px;
+    margin-bottom: 36px;
 }
 
 
@@ -50,6 +57,12 @@ font-size: 32px;
 line-height: 48px;
 font-weight: 700;
 color: #555555;
+}
+
+
+.profile-desc svg {
+    width: 16px;
+    height: 21px;
 }
 
 .profile-desc span {
@@ -76,12 +89,51 @@ color: #555555;
 }
 
 .biography {
-    background-color: khaki;
+    /* background-color: khaki; */
     display: flex;
     flex-direction: column;
+}
+
+.biography .button {
+    margin-top: 20px;
 }
 
 .desc-line {
     display: flex;
     flex-direction: row;
+    margin: 12px 0;
+}
+
+.desc-line p {
+    color: #555555;
+    font-size: 18px;
+    max-width: 480px;
+    line-height: 24px;
+    
+}
+
+.balloon {
+    margin-right: 8px;
+}
+
+.research {
+display: flex;
+justify-content: space-between;
+width: 66.5%;
+margin: 0 auto;
+}
+.researchImgDiv {
+    width: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.research img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 150%;
+    transform: scale(1.5);
+}
+.researchService {
+    width: 50%;
 }

@@ -11,8 +11,21 @@ padding:24px 0;
 .description-line {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:stretch;
     margin: 12px 0; 
+}
+
+.description-singleline {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin: 12px 0; 
+}
+
+.something {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .service-title {
@@ -23,7 +36,7 @@ padding:24px 0;
     font-weight: 700;
 }
 
-.description-line span {
+.description-line span , .description-singleline span {
     background-color: rgba(104, 17, 245, 0.08);
     color:#6811F5;
     height: 56px;
@@ -36,4 +49,24 @@ padding:24px 0;
     line-height: 24px;
     font-size: 24px;
     font-weight: 700;
+}
+
+.description-line span  {
+    margin-right: 42px;
+}
+
+
+h5 {
+    font-size: 24px;
+}
+
+.something h5 {
+    margin-top: 14px;
+    font-size: 24px;
+}
+
+h6 {
+    color:#555555;
+    margin-top: 16px;
+    max-width: 416px;
 }
